@@ -1,0 +1,6 @@
+*.weights
+*.pt
+venv/
+dataset/
+uploads/
+static/output/

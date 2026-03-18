@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vehicle Detection AI</title>
+<style>
+body {
+    background: #0f172a;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container { margin-top: 60px; }
+h1 { font-size: 40px; margin-bottom: 10px; }
+.subtitle { color: #94a3b8; margin-bottom: 40px; }
+.upload-box {
+    border: 2px dashed #38bdf8;
+    padding: 40px;
+    width: 400px;
+    margin: auto;
+    border-radius: 12px;
+    background: #1e293b;
+}
+.upload-box:hover { background: #334155; }
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+button:hover { background: #0ea5e9; }
+video {
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+.loader {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #38bdf8;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>🚗 AI Vehicle Detection</h1>
+    <p class="subtitle">Upload a video and detect all vehicles automatically</p>
+
+    <div class="upload-box">
+        <form method="POST" enctype="multipart/form-data" onsubmit="showLoader()">
+            <input type="file" name="video" accept="video/*" required>
+            <br><br>
+            <button type="submit">Detect Vehicles</button>
+        </form>
+        <div class="loader" id="loader">Processing video... please wait ⏳</div>
+    </div>
+
+    {% if video %}
+    <h2>Detected Vehicles</h2>
+    <video width="720" controls autoplay>
+        <source src="{{ url_for('static', filename=video) }}" type="video/mp4">
+        <!-- changed type to video/mp4 -->
+    </video>
+    {% endif %}
+</div>
+
+<script>
+function showLoader() {
+    document.getElementById("loader").style.display = "block";
+}
+</script>
+</body>
+</html>
