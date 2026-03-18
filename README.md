@@ -21,7 +21,7 @@ http://127.0.0.1:5000/
 ## 📸 Demo
 
 Output:
-![Output](add-output-image-or-gif-here)
+<img width="1262" height="896" alt="Image" src="https://github.com/user-attachments/assets/143507a1-1865-420d-a96f-dbc8eee5a6f4" />
 
 ## 📂 Project Structure
 ├── app.py
