@@ -1,8 +1,8 @@
 # 🚗 Intelligent Traffic Monitoring System
 
-> An AI-based system that detects vehicles in traffic videos using the YOLO deep learning model.
-> It processes video frames, identifies vehicles, and generates an output video with bounding boxes.
-> The system is deployed with a web interface for easy upload and visualization.
+ An AI-based system that detects vehicles in traffic videos using the YOLO deep learning model.
+ It processes video frames, identifies vehicles, and generates an output video with bounding boxes.
+ The system is deployed with a web interface for easy upload and visualization.
 
 
 ## 🛠️ Tech Stack
