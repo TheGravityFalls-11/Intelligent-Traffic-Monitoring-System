@@ -1,6 +1,9 @@
 # 🚗 Intelligent Traffic Monitoring System
 
-AI-based web application to detect vehicles in traffic videos using YOLO and OpenCV.
+> An AI-based system that detects vehicles in traffic videos using the YOLO deep learning model.
+> It processes video frames, identifies vehicles, and generates an output video with bounding boxes.
+> The system is deployed with a web interface for easy upload and visualization.
+
 
 ## 🛠️ Tech Stack
 Python, OpenCV, YOLOv8 (Ultralytics), PyTorch, Flask, HTML, CSS, JavaScript
@@ -22,18 +25,6 @@ http://127.0.0.1:5000/
 
 Output:
 <img width="1262" height="896" alt="Image" src="https://github.com/user-attachments/assets/143507a1-1865-420d-a96f-dbc8eee5a6f4" />
-
-## 📂 Project Structure
-├── app.py
-├── detect_video.py
-├── train.py
-├── generate_txt.py
-├── requirements.txt
-├── templates/
-│   └── index.html
-├── static/
-│   └── output/
-├── uploads/
 
 ## 👩‍💻 Author
 Aastha Hotwani
